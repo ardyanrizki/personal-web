@@ -177,4 +177,9 @@ a {
   gap: 8px;
   color: #999999;
   text-decoration: none;
+  transition: background-color 200ms ease-in-out;
+}
+
+a:hover {
+  background-color: #F5F5F5;
 }
