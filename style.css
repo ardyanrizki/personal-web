@@ -150,8 +150,15 @@ section {
 
 .container.narrow {
   max-width: 640px;
+  height: 100%;
   margin: 0 auto;
-  padding: 80px 16px 24px;
+  padding: 40px;
+}
+
+@media only screen and (max-width: 640px) {
+  .container.narrow {
+    padding: 16px;
+  }
 }
 
 h1,
