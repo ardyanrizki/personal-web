@@ -166,11 +166,10 @@ section {
   gap: 16px;
 }
 
-.bg-avatar {
+#bg-avatar {
   width: 80px;
   aspect-ratio: 1 / 1;
   border-radius: 100%;
-  background: linear-gradient(108.4deg, #005AA7 -7.3%, #EC6EAD 97.8%);
 }
 
 .name {
@@ -204,6 +203,11 @@ section {
   gap: 4px;
   text-decoration: none;
   color: #71767B;
+  transition: color ease-in-out 200ms;
+}
+
+.location:hover {
+  color: #2a2a2a;
 }
 
 .location span {
@@ -229,10 +233,11 @@ section {
   gap: 8px;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+  transition: background-color ease-in-out 200ms;
 }
 
 .primary-btn {
@@ -240,9 +245,17 @@ section {
   color: #FFFFFF;
 }
 
+.primary-btn:hover {
+  background-color: #2a2a2a;
+}
+
 .secondary-btn {
   background-color: #F2F2F2;
   color: #65646A;
+}
+
+.secondary-btn:hover {
+  background-color: #e8e8e8;
 }
 
 @media only screen and (max-width: 640px) {
