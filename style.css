@@ -261,7 +261,7 @@ section {
 
 @media only screen and (max-width: 640px) {
   .container.narrow {
-    min-width: none;
+    min-width: 0px;
     padding: 24px;
   }
 }
