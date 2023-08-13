@@ -1,4 +1,4 @@
-var colors = [
+const colors = [
   [
     "#A770EF",
     "#CF8BF3",
@@ -68,6 +68,16 @@ var colors = [
   ]
 ];
 
+const bios = [
+  "I clean my derived data folder, regularly (for sure).",
+  "I can tell the difference between class and struct, proficiently."
+]
+
+function didAppear() {
+  randomizeBio()
+  randomizeAvatarBackground()
+}
+
 function randomizeAvatarBackground() {
   let selectedColor = colors[Math.floor(Math.random() * colors.length)];
   let backgroundCSS = "linear-gradient(120deg, "
@@ -79,5 +89,10 @@ function randomizeAvatarBackground() {
       backgroundCSS += ")"
     }
   })
-  document.getElementById('bg-avatar').style.background = backgroundCSS;
+  document.getElementById("bg-avatar").style.background = backgroundCSS;
+}
+
+function randomizeBio() {
+  let selectedBio = bios[Math.floor(Math.random() * bios.length)];
+  document.getElementById("bio").innerHTML = selectedBio
 }

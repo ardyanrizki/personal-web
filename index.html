@@ -26,14 +26,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="randomizeAvatarBackground()">
+<body onload="didAppear()">
   <section>
     <div class="container narrow">
       <div id="bg-avatar"></div>
       <div class="personal-info">
         <h1 class="name">Ardyan</h1>
         <span class="pill"> Developer</span>
-        <p class="about">I can tell the difference between class and struct, proficiently.</p>
+        <p id="bio" class="about">***</p>
         <a class="location" href="https://goo.gl/maps/oPqneYeBU9GpiqVH9?coh=178573&entry=tt" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
             <path
@@ -44,19 +44,19 @@
         </a>
       </div>
       <div class="cta">
-        <a class="button secondary-btn" href="mailto:dev.ardyan@gmail.com">
+        <a class="button primary-btn" href="mailto:dev.ardyan@gmail.com">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
             <path
               d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"
-              fill="rgba(101,100,106,1)"></path>
+              fill="rgba(255,255,255,1)"></path>
           </svg>
           Message
         </a>
-        <a class="button primary-btn" href="/Ardyan's Resume.pdf" download="">
+        <a class="button secondary-btn" href="/Ardyan's Resume.pdf" download="">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
             <path
               d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19Z"
-              fill="rgba(255,255,255,1)"></path>
+              fill="rgba(101,100,106,1)"></path>
           </svg>
           Resume
         </a>
