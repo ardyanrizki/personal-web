@@ -173,10 +173,30 @@ section {
   border-radius: 100%;
 }
 
+.hstack {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 16px;
+}
+
 .name {
   font-size: 24px;
   font-weight: 700;
   line-height: 110%;
+}
+
+.pill.secondary-pill {
+  /* padding: 2px 8px;height: 16px; */
+  border: none;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #41C863;
+  background-color: #D7F9E0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .pill {
@@ -234,7 +254,7 @@ section {
   gap: 8px;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 16px;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
